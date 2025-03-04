@@ -3,7 +3,7 @@ import MaxWidthWrapper from "@/domain/shared/components/max-width-wrapper"
 import { Button } from "@/domain/shared/components/ui/button"
 import { Separator } from "@/domain/shared/components/ui/separator"
 import SearchProductByTitle from "@/domain/utils/search-product-by-title.util"
-import { SwitchDotToComma } from "@/domain/utils/switch-dot-to-comma"
+import { SwitchDotToComma } from "@/domain/utils/switch-dot-to-comma.util"
 import Image from "next/image"
 
 export default async function ProductPage({
@@ -35,7 +35,9 @@ export default async function ProductPage({
                 Logitech Brasil
               </span>
               <div className="bg-opacity-60 hidden md:block h-4 my-auto bg-black w-[1px] self-stretch "></div>
-              <span className="text-Accent font-bold basis-full md:basis-auto">Em estoque</span>
+              <span className="text-Accent font-bold basis-full md:basis-auto">
+                Em estoque
+              </span>
             </div>
 
             <div className="flex flex-col space-y-1">
