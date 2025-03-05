@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Teste Técnico - Frontend
 
-## Getting Started
+Este projeto é um teste técnico para uma vaga de frontend. A aplicação foi desenvolvida utilizando **Next.js**, **Tailwind CSS** e **Shadcn**, garantindo uma interface moderna, responsiva e escalável.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js** - Framework React para produção.
+- **Tailwind CSS** - Estilização com classes utilitárias.
+- **Shadcn** - Componentes acessíveis e estilizados.
+
+## 📸 Captura de Tela
+![image](https://github.com/user-attachments/assets/5fd6e39a-7730-4eea-8013-67e704e5f829)
+![image](https://github.com/user-attachments/assets/7570a251-9014-49ef-b351-5446083f159a)
+![image](https://github.com/user-attachments/assets/edea6e78-d9d2-41e7-a47b-88edb0942f05)
+![image](https://github.com/user-attachments/assets/d57748ce-c31a-4181-b2f2-9badca07c2cf)
+
+
+
+
+
+
+## 📂 Estrutura do Projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+📦 teste-tecnico-frontend
+ ┣ 📂 src
+ ┃ ┣ 📂 domain # Código principal da aplicação
+ ┃ ┃ ┣ 📂 @types # Tipos globais da aplicação
+ ┃ ┃ ┣ 📂 actions # Server side do Next.js
+ ┃ ┃ ┣ 📂 contexts # Contexts da aplicação
+ ┃ ┃ ┣ 📂 data # Dados estáticos
+ ┃ ┃ ┣ 📂 shared # Componentes compartilhados globalmente
+ ┃ ┃ ┣ 📂 utils # Pequenas funções utilitárias
+ ┃ ┣ 📂 presenter # Camada de telas dividida por componentes
+ ┃ ┣ 📂 app # Telas e roteamento
+ ┃ ┗ 📜 app.tsx # Arquivo principal
+ ┣ 📜 .gitignore
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+ ┗ 📜 tsconfig.on
+ 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1️⃣ Clone o Repositório
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+```
 
-## Learn More
+### 2️⃣ Instale as Dependências
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn install
+# ou
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3️⃣ Inicie o Servidor de Desenvolvimento
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+yarn dev
+# ou
+npm run dev
+```
 
-## Deploy on Vercel
+A aplicação estará disponível em: `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✅ Funcionalidades Implementadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Uso de server actions para simular um pequeno backend
+- Contexto para gerenciamento global da aplicação
+- Estilo fiel ao modelo apresentado
+- Uso de boas práticas de programação
+
+## 🌐 Site Hospedado
+
+Acesse a aplicação online: https\://teste-russel-servicos.vercel.app/
+
+## 📌 Próximos Passos
+
+- Adicionar um backend
+
+##
+
+Se tiver alguma dúvida ou sugestão, fique à vontade para abrir uma issue! 😊
+
