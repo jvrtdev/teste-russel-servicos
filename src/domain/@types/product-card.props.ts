@@ -6,5 +6,5 @@ export type ProductCardProps = {
   variant?: "product" | "promotion" ;
   className?: string;
   slug: string
-  id?: number
+  id: number
 }
