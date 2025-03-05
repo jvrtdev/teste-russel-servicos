@@ -1,4 +1,5 @@
 import { ProductCardProps } from "@/domain/@types/product-card.props"
+import { getVideoCardsProducts } from "@/domain/actions/products"
 import { VideoCards } from "@/domain/data/products.data"
 import MaxWidthWrapper from "@/domain/shared/components/max-width-wrapper"
 import {
@@ -10,7 +11,9 @@ import {
 } from "@/domain/shared/components/ui/carousel"
 import ProductCard from "../components/product-card"
 
-export default function ProductsSection() {
+export default async function ProductsSection() {
+  const products = await getVideoCardsProducts()
+
   return (
     <div className="bg-Background w-full h-full p-4 md:p-10">
       <MaxWidthWrapper className=" px-none">
@@ -23,7 +26,7 @@ export default function ProductsSection() {
 
         <Carousel className="w-full mx-auto">
           <CarouselContent className="-ml-1 py-4">
-            {VideoCards.map((product: ProductCardProps) => (
+            {products.map((product: ProductCardProps) => (
               <CarouselItem
                 key={product.src}
                 className="pl-1 sm:basis-1/3 md:basis-1/4"
