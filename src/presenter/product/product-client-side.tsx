@@ -5,8 +5,10 @@ import MaxWidthWrapper from "@/domain/shared/components/max-width-wrapper"
 import { Button } from "@/domain/shared/components/ui/button"
 import { SwitchDotToComma } from "@/domain/utils/switch-dot-to-comma.util"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 export default function ProductPageClientSide(product: ProductCardProps) {
+  const router = useRouter()
   const { addToCart } = useCart()
 
   return (
@@ -45,7 +47,19 @@ export default function ProductPageClientSide(product: ProductCardProps) {
             </div>
 
             <div className="flex flex-col md:flex-row space-x-4 space-y-4 ">
-              <Button className="bg-Accent w-full text-white font-bold text-xl py-3 px-6 rounded-none hover:border-Accent duration-75 md:max-w-fit">
+              <Button className="bg-Accent w-full text-white font-bold text-xl py-3 px-6 rounded-none hover:border-Accent duration-75 md:max-w-fit"
+                onClick={() => {
+                  addToCart({
+                    id: product.id,
+                    name: product.title,
+                    imageUrl: product.src,
+                    price: product.currentPrice,
+                    quantity: 1,
+                    slug: product.slug,
+                  })
+                  router.push("/checkout")}
+                }
+              >
                 COMPRAR
               </Button>
               <Button
