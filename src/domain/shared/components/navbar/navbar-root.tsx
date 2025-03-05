@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
 import Navbar from "./navbar"
-import { useRouter } from "next/router";
 
 export default function NavbarRoot() {
   const [isClient, setIsClient] = useState(false);

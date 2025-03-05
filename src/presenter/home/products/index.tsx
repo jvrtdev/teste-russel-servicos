@@ -1,6 +1,5 @@
 import { ProductCardProps } from "@/domain/@types/product-card.props"
 import { getVideoCardsProducts } from "@/domain/actions/products"
-import { VideoCards } from "@/domain/data/products.data"
 import MaxWidthWrapper from "@/domain/shared/components/max-width-wrapper"
 import {
   Carousel,

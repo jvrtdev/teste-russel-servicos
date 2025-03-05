@@ -2,7 +2,6 @@
 import { ProductCardProps } from "@/domain/@types/product-card.props"
 import { SwitchDotToComma } from "@/domain/utils/switch-dot-to-comma.util"
 import { cn } from "@/lib/utils"
-import { cva } from "class-variance-authority"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "../../../domain/shared/components/ui/button"

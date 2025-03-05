@@ -1,7 +1,6 @@
 import banner from "@/../public/Banner.png"
 import { ProductCardProps } from "@/domain/@types/product-card.props"
 import { getLogitechProducts } from "@/domain/actions/products"
-import { LogitechProducts } from "@/domain/data/products.data"
 import MaxWidthWrapper from "@/domain/shared/components/max-width-wrapper"
 import ProductCard from "@/presenter/home/components/product-card"
 import Image from "next/image"
